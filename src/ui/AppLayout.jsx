@@ -9,7 +9,7 @@ const AppLayout = () => {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen font-sans font-serif ">
       {isLoading && <Loader />}
 
       <Header />
