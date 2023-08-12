@@ -1,10 +1,17 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import CartOverview from "../features/Cart/CartOverview";
 import Header from "./Header";
+import Loader from "./Loader";
 
 const AppLayout = () => {
+  const navigation = useNavigation();
+
+  const isLoading = navigation.state === "loading";
+
   return (
     <div className="relative min-h-screen">
+      {isLoading && <Loader />}
+
       <Header />
 
       <main>
