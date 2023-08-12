@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="relative min-h-screen">
       <Header />
 
       <main>
