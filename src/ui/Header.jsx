@@ -4,7 +4,9 @@ import SearchOrder from "../features/order/SearchOrder";
 const Header = () => {
   return (
     <header className=" flex bg-yellow-500 py-3">
-      <Link to="/">Fast Pizza Co.</Link>
+      <Link className=" tracking-wider" to="/">
+        Fast Pizza Co.
+      </Link>
 
       <SearchOrder />
       <p>Jonas</p>
