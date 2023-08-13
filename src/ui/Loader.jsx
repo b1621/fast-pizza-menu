@@ -1,7 +1,7 @@
 const Loader = () => {
   return (
-    <div>
-      <p className="text-3xl my-10">Loading ....</p>
+    <div className="absolute  top-52 w-full">
+      <p className="mx-auto my-10 w-fit text-3xl">Loading ....</p>
     </div>
   );
 };

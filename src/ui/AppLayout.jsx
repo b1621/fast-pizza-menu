@@ -9,14 +9,16 @@ const AppLayout = () => {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="relative min-h-screen font-serif ">
+    <div className="grid h-screen grid-rows-[auto_1fr_auto] font-serif ">
       {isLoading && <Loader />}
 
       <Header />
 
-      <main>
-        <Outlet />
-      </main>
+      <div className=" overflow-scroll">
+        <main className="mx-auto max-w-3xl border">
+          <Outlet />
+        </main>
+      </div>
 
       <CartOverview />
     </div>
