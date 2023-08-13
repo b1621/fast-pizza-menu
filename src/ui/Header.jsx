@@ -4,7 +4,7 @@ import Username from "../features/user/Username";
 
 const Header = () => {
   return (
-    <header className=" flex  justify-between border-b border-stone-200 bg-yellow-500 px-4 py-3 sm:px-8">
+    <header className=" flex items-center  justify-between border-b border-stone-200 bg-yellow-500 px-4 py-3  sm:px-8">
       <Link className=" tracking-wider" to="/">
         Fast Pizza Co.
       </Link>
