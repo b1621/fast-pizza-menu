@@ -3,10 +3,11 @@ import SearchOrder from "../features/order/SearchOrder";
 
 const Header = () => {
   return (
-    <header className=" flex border py-3">
+    <header className=" flex bg-yellow-500 py-3">
       <Link to="/">Fast Pizza Co.</Link>
 
       <SearchOrder />
+      <p>Jonas</p>
     </header>
   );
 };
